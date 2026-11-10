@@ -1,0 +1,81 @@
+# =========================================================
+# .htaccess — PT Karya Timur Cemerlang
+# Aturan SEO & performa di level server.
+# Tidak mengubah struktur URL / file apa pun di website ini.
+# =========================================================
+
+RewriteEngine On
+
+# ---------------------------------------------------------
+# 1) Paksa HTTPS (semua traffic http:// dialihkan ke https://)
+# ---------------------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ---------------------------------------------------------
+# 2) Paksa non-www (www.karyatimurcemerlang.com -> karyatimurcemerlang.com)
+#    Sesuai dengan canonical URL yang sudah dipasang di setiap
+#    halaman (https://karyatimurcemerlang.com/...).
+#    Jika domain final ternyata pakai www, hapus/comment blok ini.
+# ---------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [L,R=301]
+
+# ---------------------------------------------------------
+# 3) Redirect /index.html -> / (hindari duplicate content
+#    antara karyatimurcemerlang.com/ dan karyatimurcemerlang.com/index.html)
+# ---------------------------------------------------------
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# ---------------------------------------------------------
+# 4) Encoding default
+# ---------------------------------------------------------
+AddDefaultCharset UTF-8
+
+# ---------------------------------------------------------
+# 5) Cegah directory listing (keamanan dasar)
+# ---------------------------------------------------------
+Options -Indexes
+
+# ---------------------------------------------------------
+# 6) Kompresi GZIP (mempercepat loading -> baik untuk SEO/Core Web Vitals)
+# ---------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/ld+json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------
+# 7) Browser caching untuk asset statis (mempercepat loading berulang)
+# ---------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg               "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType image/x-icon            "access plus 1 year"
+  ExpiresByType text/css                "access plus 1 month"
+  ExpiresByType application/javascript  "access plus 1 month"
+  ExpiresByType text/javascript         "access plus 1 month"
+  ExpiresByType text/html               "access plus 0 seconds"
+  ExpiresByType application/xml         "access plus 0 seconds"
+</IfModule>
+
+# ---------------------------------------------------------
+# 8) Header keamanan dasar (tidak memengaruhi tampilan/fungsi)
+# ---------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ---------------------------------------------------------
+# 9) Custom 404 (opsional — aktifkan jika sudah ada halaman 404)
+# ---------------------------------------------------------
+# ErrorDocument 404 /404.html

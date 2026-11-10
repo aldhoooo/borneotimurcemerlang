@@ -1,0 +1,772 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- SEO -->
+  <meta name="description" content="PT Borneo Timur Cemerlang adalah supplier kebutuhan marine, ship safety, navigation, dan industrial supplies yang berlokasi di Samarinda, Kalimantan Timur.">
+  <meta name="keywords" content="PT Borneo Timur Cemerlang, BTC, marine supplier, ship supplier, marine equipment, ship safety equipment, navigation equipment, industrial supplies, supplier peralatan kapal Samarinda, supplier kapal Kalimantan Timur">
+  <meta name="theme-color" content="#173B2B">
+  <meta name="robots" content="index, follow">
+
+  <title>Tentang Kami – PT Borneo Timur Cemerlang | Marine & Industrial Supplies</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PT Borneo Timur Cemerlang">
+  <meta property="og:title" content="Tentang Kami – PT Borneo Timur Cemerlang">
+  <meta property="og:description" content="Mengenal PT Borneo Timur Cemerlang, penyedia kebutuhan marine, ship safety, navigation, dan industrial supplies di Samarinda, Kalimantan Timur.">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tentang Kami – PT Borneo Timur Cemerlang">
+  <meta name="twitter:description" content="Mengenal PT Borneo Timur Cemerlang, penyedia kebutuhan marine dan industrial supplies.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/icon_btc.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+
+
+
+
+<!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "PT Borneo Timur Cemerlang",
+      "email": "general@borneotimurcemerlang.co.id",
+      "telephone": "+6281295549800",
+      "logo": "assets/icons/icon_btc.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ruko Palaran City, Block A No. 17, 18 & 19, Simpang Pasir, Kecamatan Palaran",
+        "addressLocality": "Samarinda",
+        "addressRegion": "Kalimantan Timur",
+        "addressCountry": "ID"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* === REVEAL ANIMATION === */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition:
+        opacity .6s var(--ease-out),
+        transform .6s var(--ease-out);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: none;
+    }
+
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+
+    /* === ABOUT IMAGE STACK === */
+    .about-img-stack-wrap {
+      position: relative;
+      width: 100%;
+      height: 260px;
+    }
+
+    .about-img-main-r {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 78%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-img-accent-r {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 52%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      border: 4px solid var(--white);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-badge-float-r {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(0, -50%);
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 16px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(37, 184, 121, .25);
+      z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+      .about-intro-grid {
+        grid-template-columns: 1fr 1fr !important;
+      }
+
+      .about-img-stack-wrap {
+        height: 340px;
+      }
+
+      .about-img-main-r {
+        height: 280px;
+      }
+
+      .about-img-accent-r {
+        height: 180px;
+      }
+
+      .about-badge-float-r {
+        left: 65%;
+        padding: 16px 20px;
+      }
+
+      .vm-grid {
+        grid-template-columns: 1fr 1fr !important;
+      }
+    }
+
+    /* === INDUSTRY CARDS === */
+    @media (max-width: 599px) {
+      .industry-card {
+        padding: var(--sp-md) !important;
+      }
+
+      .industry-card .card-icon {
+        font-size: 1.75rem !important;
+        margin-bottom: var(--sp-sm) !important;
+      }
+
+      .industry-card h3 {
+        font-size: .85rem !important;
+      }
+
+      .industry-card p {
+        font-size: .72rem !important;
+      }
+    }
+  </style>
+
+  <script>
+  (function(){
+    var canonical=document.querySelector('link[rel="canonical"]');
+    var path=window.location.pathname;
+    if(path.endsWith('/index.html')) path=path.slice(0,-10) || '/';
+    var pageUrl=new URL(path,window.location.origin);
+    pageUrl.search=''; pageUrl.hash='';
+    if(!canonical){ canonical=document.createElement('link'); canonical.rel='canonical'; document.head.appendChild(canonical); }
+    canonical.href=pageUrl.href;
+    var ogUrl=document.querySelector('meta[property="og:url"]');
+    if(!ogUrl){ ogUrl=document.createElement('meta'); ogUrl.setAttribute('property','og:url'); document.head.appendChild(ogUrl); }
+    ogUrl.content=pageUrl.href;
+    var ogImage=document.querySelector('meta[property="og:image"]');
+    if(!ogImage){ ogImage=document.createElement('meta'); ogImage.setAttribute('property','og:image'); document.head.appendChild(ogImage); }
+    ogImage.content=new URL('/assets/icons/icon_btc.png',window.location.origin).href;
+    var site=document.querySelector('meta[property="og:site_name"]');
+    if(site) site.content='PT Borneo Timur Cemerlang';
+  })();
+  </script>
+  <link rel="stylesheet" href="css/main.css?v=3.0.0">
+  <link rel="stylesheet" href="css/pages.css?v=3.0.0">
+</head>
+
+<body data-page="about">
+
+  <div id="nav-slot"></div>
+
+  <!-- PAGE HERO -->
+  <section style="background:linear-gradient(150deg,var(--navy) 0%,var(--navy-mid) 60%,var(--ocean) 100%);padding:calc(var(--nav-h) + 56px) 0 72px;position:relative;overflow:hidden;">
+    <div style="position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(37,184,121,.12) 0%,transparent 70%);pointer-events:none;"></div>
+    <div class="container">
+      <p style="font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--aqua);margin-bottom:10px;display:flex;align-items:center;gap:8px;">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+        </svg>
+        <span data-i18n="about_hero_eyebrow">Tentang Kami</span>
+      </p>
+
+      <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:800;color:var(--white);line-height:1.15;margin-bottom:14px;max-width:960px;" data-i18n="about_hero_title">
+        PT Borneo Timur Cemerlang
+      </h1>
+
+      <p style="font-size:1rem;color:rgba(255,255,255,.75);max-width:960px;line-height:1.7;" data-i18n="about_hero_sub">
+        Mitra penyedia kebutuhan marine, ship safety, navigation, dan industrial supplies.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- OUR STORY -->
+  <section style="padding:var(--sp-3xl) 0;background:var(--white);">
+
+    <div class="container">
+
+      <div style="display:grid;grid-template-columns:1fr;gap:var(--sp-2xl);align-items:center;" class="about-intro-grid">
+
+        <!-- Image Stack -->
+        <div class="reveal about-img-stack-wrap">
+
+          <img
+            src="./assets/images/our-story-1.webp"
+            alt="Kapal di area pelabuhan"
+            loading="lazy"
+            class="about-img-main-r"
+          >
+
+          <img
+            src="./assets/images/our-story-2.webp"
+            alt="Peralatan dan perlengkapan kapal"
+            loading="lazy"
+            class="about-img-accent-r"
+          >
+
+        </div>
+
+        <!-- Text -->
+        <div class="reveal">
+
+          <div class="section-eyebrow" data-i18n="about_story_title">
+            Profil Perusahaan
+          </div>
+
+          <h2 class="section-title" style="margin-bottom:var(--sp-lg);" data-i18n="about_story_title">
+            Mengenal BTC
+          </h2>
+
+          <p style="font-size:.9375rem;color:var(--text-body);line-height:1.75;margin-bottom:var(--sp-md);" data-i18n="about_story_p1">
+            PT Borneo Timur Cemerlang merupakan perusahaan yang bergerak dalam penyediaan kebutuhan marine dan industrial supplies. Berlokasi di Samarinda, Kalimantan Timur, perusahaan ini melayani kebutuhan perlengkapan kapal dan kebutuhan industri.
+          </p>
+
+          <p style="font-size:.9375rem;color:var(--text-body);line-height:1.75;margin-bottom:var(--sp-xl);" data-i18n="about_story_p2">
+            Produk yang disediakan mencakup perlengkapan keselamatan kapal, peralatan navigasi, serta berbagai kebutuhan pendukung operasional kapal dan industri. BTC berkomitmen memberikan pelayanan profesional untuk mendukung kebutuhan pelanggan.
+          </p>
+
+          <div class="download-wrapper">
+            <p class="company-profile-note" role="note">Company Profile BTC sedang diperbarui.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- VISION & MISSION -->
+  <section style="padding:var(--sp-3xl) 0;background:linear-gradient(135deg,var(--navy) 0%,var(--ocean) 100%);position:relative;overflow:hidden;">
+
+    <div style="position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(37,184,121,.12) 0%,transparent 70%);pointer-events:none;"></div>
+
+    <div style="position:absolute;bottom:-120px;left:-120px;width:400px;height:400px;background:radial-gradient(circle,rgba(245,204,117,.07) 0%,transparent 70%);pointer-events:none;"></div>
+
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="reveal" style="text-align:center;margin-bottom:var(--sp-2xl);">
+
+        <div style="font-family:var(--font-display);font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--aqua);margin-bottom:var(--sp-sm);display:flex;align-items:center;justify-content:center;gap:8px;">
+
+          <span style="display:block;width:24px;height:2px;background:var(--aqua);border-radius:2px;"></span>
+
+          <span data-i18n="about_mission">Visi & Misi</span>
+
+          <span style="display:block;width:24px;height:2px;background:var(--aqua);border-radius:2px;"></span>
+
+        </div>
+
+      </div>
+
+
+      <!-- Vision + Mission Cards -->
+      <div style="display:grid;grid-template-columns:1fr;gap:var(--sp-lg);margin-bottom:var(--sp-2xl);" class="vm-grid">
+
+        <!-- VISION -->
+        <div class="reveal" style="background:rgba(255,255,255,.06);border:1px solid rgba(37,184,121,.25);border-radius:var(--radius-lg);padding:var(--sp-xl);position:relative;overflow:hidden;">
+
+          <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:radial-gradient(circle,rgba(37,184,121,.14) 0%,transparent 70%);pointer-events:none;"></div>
+
+          <div style="display:flex;align-items:center;gap:var(--sp-md);margin-bottom:var(--sp-lg);">
+
+            <div style="width:52px;height:52px;border-radius:var(--radius-md);background:rgba(37,184,121,.16);border:1px solid rgba(37,184,121,.3);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;">
+              🎯
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;color:var(--aqua);line-height:1.2;" data-i18n="about_vision_label">
+              Visi
+            </h3>
+
+          </div>
+
+          <p style="font-size:1rem;color:rgba(255,255,255,.85);line-height:1.8;font-style:italic;border-left:3px solid var(--aqua);padding-left:var(--sp-md);" data-i18n="about_vision_text">
+            Menjadi mitra terpercaya dalam penyediaan kebutuhan marine dan industrial supplies.
+          </p>
+
+        </div>
+
+
+        <!-- MISSION -->
+        <div class="reveal reveal-delay-1" style="background:rgba(255,255,255,.06);border:1px solid rgba(245,204,117,.22);border-radius:var(--radius-lg);padding:var(--sp-xl);position:relative;overflow:hidden;">
+
+          <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:radial-gradient(circle,rgba(245,204,117,.09) 0%,transparent 70%);pointer-events:none;"></div>
+
+          <div style="display:flex;align-items:center;gap:var(--sp-md);margin-bottom:var(--sp-lg);">
+
+            <div style="width:52px;height:52px;border-radius:var(--radius-md);background:rgba(245,204,117,.12);border:1px solid rgba(245,204,117,.3);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;">
+              🚀
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;color:var(--gold-light);line-height:1.2;" data-i18n="about_mission_label">
+              Misi
+            </h3>
+
+          </div>
+
+          <ul style="display:flex;flex-direction:column;gap:var(--sp-md);list-style:none;padding:0;margin:0;">
+
+            <li style="display:flex;align-items:flex-start;gap:var(--sp-md);font-size:.9375rem;color:rgba(255,255,255,.8);line-height:1.65;">
+              <span style="min-width:26px;height:26px;border-radius:50%;background:rgba(245,204,117,.15);border:1px solid rgba(245,204,117,.3);color:var(--gold-light);font-size:.7rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">1</span>
+              <span data-i18n="about_mission_1">Menyediakan kebutuhan marine dan industrial supplies.</span>
+            </li>
+
+            <li style="display:flex;align-items:flex-start;gap:var(--sp-md);font-size:.9375rem;color:rgba(255,255,255,.8);line-height:1.65;">
+              <span style="min-width:26px;height:26px;border-radius:50%;background:rgba(245,204,117,.15);border:1px solid rgba(245,204,117,.3);color:var(--gold-light);font-size:.7rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">2</span>
+              <span data-i18n="about_mission_2">Mendukung kebutuhan perlengkapan keselamatan dan navigasi kapal.</span>
+            </li>
+
+            <li style="display:flex;align-items:flex-start;gap:var(--sp-md);font-size:.9375rem;color:rgba(255,255,255,.8);line-height:1.65;">
+              <span style="min-width:26px;height:26px;border-radius:50%;background:rgba(245,204,117,.15);border:1px solid rgba(245,204,117,.3);color:var(--gold-light);font-size:.7rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">3</span>
+              <span data-i18n="about_mission_3">Memberikan pelayanan yang profesional dan responsif.</span>
+            </li>
+
+            <li style="display:flex;align-items:flex-start;gap:var(--sp-md);font-size:.9375rem;color:rgba(255,255,255,.8);line-height:1.65;">
+              <span style="min-width:26px;height:26px;border-radius:50%;background:rgba(245,204,117,.15);border:1px solid rgba(245,204,117,.3);color:var(--gold-light);font-size:.7rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">4</span>
+              <span data-i18n="about_mission_4">Menjaga kualitas produk dan ketepatan pemenuhan kebutuhan pelanggan.</span>
+            </li>
+
+            <li style="display:flex;align-items:flex-start;gap:var(--sp-md);font-size:.9375rem;color:rgba(255,255,255,.8);line-height:1.65;">
+              <span style="min-width:26px;height:26px;border-radius:50%;background:rgba(245,204,117,.15);border:1px solid rgba(245,204,117,.3);color:var(--gold-light);font-size:.7rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">5</span>
+              <span data-i18n="about_mission_5">Membangun hubungan kerja sama yang baik dengan pelanggan dan mitra.</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- BUSINESS FOCUS -->
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.08);border-radius:var(--radius-lg);overflow:hidden;">
+
+        <div class="reveal" style="background:rgba(255,255,255,.05);padding:var(--sp-xl);text-align:center;border-right:1px solid rgba(255,255,255,.06);">
+
+          <div style="font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--aqua);line-height:1.3;">
+            Marine
+          </div>
+
+          <div style="font-size:.8rem;color:rgba(255,255,255,.65);margin-top:6px;">
+            Marine Equipment
+          </div>
+
+        </div>
+
+        <div class="reveal reveal-delay-1" style="background:rgba(255,255,255,.05);padding:var(--sp-xl);text-align:center;">
+
+          <div style="font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--aqua);line-height:1.3;">
+            Safety
+          </div>
+
+          <div style="font-size:.8rem;color:rgba(255,255,255,.65);margin-top:6px;">
+            Ship Safety Equipment
+          </div>
+
+        </div>
+
+        <div class="reveal reveal-delay-2" style="background:rgba(255,255,255,.05);padding:var(--sp-xl);text-align:center;border-right:1px solid rgba(255,255,255,.06);">
+
+          <div style="font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--gold-light);line-height:1.3;">
+            Navigation
+          </div>
+
+          <div style="font-size:.8rem;color:rgba(255,255,255,.65);margin-top:6px;">
+            Navigation Equipment
+          </div>
+
+        </div>
+
+        <div class="reveal reveal-delay-3" style="background:rgba(255,255,255,.05);padding:var(--sp-xl);text-align:center;">
+
+          <div style="font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--gold-light);line-height:1.3;">
+            Industrial
+          </div>
+
+          <div style="font-size:.8rem;color:rgba(255,255,255,.65);margin-top:6px;">
+            Industrial Supplies
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- OUR VALUES -->
+  <section style="padding:var(--sp-3xl) 0;background:var(--off-white);">
+
+    <div class="container">
+
+      <div class="section-header reveal" style="text-align:center;margin-bottom:var(--sp-2xl);">
+
+        <div class="section-eyebrow" style="justify-content:center;" data-i18n="about_values_title">
+          Nilai Perusahaan
+        </div>
+
+        <h2 class="section-title" data-i18n="about_values_title">
+          Nilai Perusahaan
+        </h2>
+
+      </div>
+
+      <div class="values-grid">
+
+        <div class="value-card reveal">
+          <div class="value-card__num">01</div>
+          <h3 class="value-card__title" data-i18n="val_1_title"></h3>
+          <p class="value-card__desc" data-i18n="val_1_desc"></p>
+        </div>
+
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-card__num">02</div>
+          <h3 class="value-card__title" data-i18n="val_2_title"></h3>
+          <p class="value-card__desc" data-i18n="val_2_desc"></p>
+        </div>
+
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-card__num">03</div>
+          <h3 class="value-card__title" data-i18n="val_3_title"></h3>
+          <p class="value-card__desc" data-i18n="val_3_desc"></p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-card__num">04</div>
+          <h3 class="value-card__title" data-i18n="val_4_title"></h3>
+          <p class="value-card__desc" data-i18n="val_4_desc"></p>
+        </div>
+
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-card__num">05</div>
+          <h3 class="value-card__title" data-i18n="val_5_title"></h3>
+          <p class="value-card__desc" data-i18n="val_5_desc"></p>
+        </div>
+
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-card__num">06</div>
+          <h3 class="value-card__title" data-i18n="val_6_title"></h3>
+          <p class="value-card__desc" data-i18n="val_6_desc"></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TEAM / STANDARDS -->
+  <section style="padding:var(--sp-3xl) 0;background:var(--white);">
+
+    <div class="container">
+
+      <div class="section-header reveal" style="text-align:center;margin-bottom:var(--sp-2xl);">
+
+        <div class="section-eyebrow" style="justify-content:center;">
+          Our Expertise
+        </div>
+
+        <h2 class="section-title">
+          Marine & Industrial Supplies
+        </h2>
+
+        <p class="section-subtitle" style="margin:var(--sp-md) auto 0;">
+          PT Borneo Timur Cemerlang menyediakan berbagai kebutuhan marine, keselamatan kapal, navigasi, dan perlengkapan industri untuk mendukung kebutuhan operasional pelanggan.
+        </p>
+
+      </div>
+
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-md);">
+
+        <!-- MARINE -->
+        <div class="reveal industry-card" style="background:var(--navy);border-radius:var(--radius-lg);padding:var(--sp-xl);border:1px solid rgba(37,184,121,.2);text-align:center;">
+
+          <div class="card-icon" style="font-size:2.5rem;margin-bottom:var(--sp-md);">
+            ⚓
+          </div>
+
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--aqua);margin-bottom:var(--sp-sm);">
+            Marine Equipment
+          </h3>
+
+          <p style="font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.6;">
+            Kebutuhan perlengkapan kapal seperti tali kapal, anchor, anchor chain, anode, valve, dan perlengkapan pendukung lainnya.
+          </p>
+
+        </div>
+
+
+        <!-- SAFETY -->
+        <div class="reveal reveal-delay-1 industry-card" style="background:var(--navy);border-radius:var(--radius-lg);padding:var(--sp-xl);border:1px solid rgba(37,184,121,.2);text-align:center;">
+
+          <div class="card-icon" style="font-size:2.5rem;margin-bottom:var(--sp-md);">
+            🛟
+          </div>
+
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--aqua);margin-bottom:var(--sp-sm);">
+            Marine Safety
+          </h3>
+
+          <p style="font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.6;">
+            Perlengkapan keselamatan kapal seperti liferaft, lifejacket, lifebuoy, EPIRB, dan SART.
+          </p>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <div class="reveal reveal-delay-2 industry-card" style="background:var(--navy);border-radius:var(--radius-lg);padding:var(--sp-xl);border:1px solid rgba(37,184,121,.2);text-align:center;">
+
+          <div class="card-icon" style="font-size:2.5rem;margin-bottom:var(--sp-md);">
+            🧭
+          </div>
+
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--gold-light);margin-bottom:var(--sp-sm);">
+            Navigation Equipment
+          </h3>
+
+          <p style="font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.6;">
+            Peralatan navigasi dan komunikasi kapal seperti AIS, NAVTEX, radar, serta perangkat navigasi lainnya.
+          </p>
+
+        </div>
+
+
+        <!-- INDUSTRIAL -->
+        <div class="reveal reveal-delay-3 industry-card" style="background:var(--navy);border-radius:var(--radius-lg);padding:var(--sp-xl);border:1px solid rgba(37,184,121,.2);text-align:center;">
+
+          <div class="card-icon" style="font-size:2.5rem;margin-bottom:var(--sp-md);">
+            ⚙️
+          </div>
+
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--gold-light);margin-bottom:var(--sp-sm);">
+            Industrial Supplies
+          </h3>
+
+          <p style="font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.6;">
+            Berbagai kebutuhan perlengkapan industri, hardware tools, dan peralatan pendukung operasional.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-banner">
+
+    <div class="container">
+
+      <div class="cta-banner__inner reveal">
+
+        <h2 class="cta-banner__title" data-i18n="cta_title"></h2>
+
+        <p class="cta-banner__sub" data-i18n="cta_sub"></p>
+
+        <div class="cta-banner__actions" style="position:relative;z-index:1;">
+
+          <button class="btn btn-wa btn-lg wa-modal-trigger">
+
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+
+            <span data-i18n="cta_wa">Hubungi Kami</span>
+
+          </button>
+
+          <a href="contact.html" class="btn btn-ghost btn-lg" data-i18n="nav_contact">
+            Kontak
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="footer-slot"></div>
+  <div id="float-slot"></div>
+
+
+  <!-- WA ADMIN MODAL -->
+  <div id="wa-admin-modal" style="position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;padding:16px;">
+
+    <div id="wa-modal-backdrop" style="position:absolute;inset:0;background:rgba(24,59,43,0.75);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);"></div>
+
+    <div style="position:relative;background:#fff;border-radius:20px;padding:28px 24px 24px;width:100%;max-width:360px;box-shadow:0 32px 80px rgba(24,59,43,0.25);z-index:1;">
+
+      <!-- Close -->
+      <button id="wa-modal-close" style="position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:50%;background:#f0f5f1;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;color:#53685B;">
+        ✕
+      </button>
+
+
+      <!-- Header -->
+      <div style="text-align:center;margin-bottom:20px;">
+
+        <div style="width:50px;height:50px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">
+
+          <svg width="26" height="26" fill="white" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+
+        </div>
+
+        <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:#183B2B;margin:0 0 4px;">
+          Hubungi PT Borneo Timur Cemerlang
+        </p>
+
+        <p style="font-size:0.82rem;color:#82958A;margin:0;">
+          Hubungi kami melalui WhatsApp resmi perusahaan.
+        </p>
+
+      </div>
+
+
+      <!-- Official Contact -->
+      <div style="display:flex;flex-direction:column;gap:10px;">
+
+        <a
+          href="https://wa.me/6281295549800?text=Halo%20PT%20Borneo%20Timur%20Cemerlang%2C%20saya%20ingin%20menanyakan%20informasi%20produk%20dan%20layanan."
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display:flex;align-items:center;gap:12px;padding:14px 16px;border:2px solid #d5eadd;border-radius:14px;background:#f2faf5;text-decoration:none;transition:border-color .2s,background .2s;"
+          onmouseover="this.style.borderColor='#25D366';this.style.background='#edfff4'"
+          onmouseout="this.style.borderColor='#d5eadd';this.style.background='#f2faf5'"
+        >
+
+          <div style="width:40px;height:40px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+
+          </div>
+
+          <div style="flex:1;">
+
+            <div style="font-family:'Poppins',sans-serif;font-size:0.88rem;font-weight:700;color:#183B2B;">
+              PT Borneo Timur Cemerlang
+            </div>
+
+            <div style="font-size:0.78rem;color:#53685B;margin-top:1px;">
+              +62 812-9554-9800
+            </div>
+
+          </div>
+
+          <svg width="16" height="16" fill="none" stroke="#25D366" stroke-width="2.5" viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+
+        </a>
+
+      </div>
+
+      <!-- Email -->
+      <p style="font-size:.78rem;color:#82958A;text-align:center;margin-top:16px;">
+        Email:
+        <a href="mailto:general@borneotimurcemerlang.co.id" style="color:#16834F;font-weight:600;">
+          general@borneotimurcemerlang.co.id
+        </a>
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- WHATSAPP MODAL SCRIPT -->
+  <script>
+    (function () {
+      var modal = document.getElementById('wa-admin-modal');
+      var backdrop = document.getElementById('wa-modal-backdrop');
+      var close = document.getElementById('wa-modal-close');
+      var triggers = document.querySelectorAll('.wa-modal-trigger');
+
+      function openModal() {
+        if (!modal) return;
+
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        if (!modal) return;
+
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      triggers.forEach(function (trigger) {
+        trigger.addEventListener('click', openModal);
+      });
+
+      if (close) {
+        close.addEventListener('click', closeModal);
+      }
+
+      if (backdrop) {
+        backdrop.addEventListener('click', closeModal);
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+
+
+  <!-- JAVASCRIPT -->
+<script src="js/translations.js?v=2.0.31" defer></script>
+<script src="js/data.js?v=2.0.31" defer></script>
+<script src="js/partials.js?v=2.0.31" defer></script>
+<script src="js/cart.js?v=1.0.0" defer></script>
+<script src="js/catalog.js?v=2.0.31" defer></script>
+<script src="js/main.js?v=2.0.31" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin-produk.html
+
+Sitemap: https://borneotimurcemerlang.co.id/sitemap.xml

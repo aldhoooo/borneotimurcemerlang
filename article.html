@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel – PT Borneo Timur Cemerlang</title>
+  <script>
+    const articleIds = ["alat-keselamatan-kapal","alat-keselamatan-tambang-morowali","rekomendasi-gps-kapal-terbaik-2026","terpal-kapal-tongkang","zinc-anode-anoda-karat"];
+    const params = new URLSearchParams(window.location.search);
+    const requestedId = params.get('id');
+    const id = articleIds.includes(requestedId) ? requestedId : articleIds[0];
+    params.delete('id');
+    const query = params.toString();
+    window.location.replace('articles/' + id + '/article.html' + (query ? '?' + query : '') + window.location.hash);
+  </script>
+  <link rel="stylesheet" href="css/main.css?v=3.0.0">
+  <link rel="stylesheet" href="css/pages.css?v=3.0.0">
+</head>
+<body>
+  <ul>
+    <li><a href="articles/alat-keselamatan-kapal/article.html">Pentingnya Alat Keselamatan Kapal untuk Menjaga Keamanan di Laut</a></li>
+    <li><a href="articles/alat-keselamatan-tambang-morowali/article.html">Alat Keselamatan Kerja Tambang di Morowali Sulawesi yang Wajib Dipakai di Area Berisiko</a></li>
+    <li><a href="articles/rekomendasi-gps-kapal-terbaik-2026/article.html">5 Rekomendasi GPS Kapal Terbaik 2026 untuk Nelayan & Kapal Komersial</a></li>
+    <li><a href="articles/terpal-kapal-tongkang/article.html">Pentingnya Terpal Kapal Tongkang untuk Menjaga Keamanan dan Efisiensi Pengangkutan</a></li>
+    <li><a href="articles/zinc-anode-anoda-karat/article.html">Zinc Anode (Anoda Karat): Perlindungan Efektif untuk Kapal dan Struktur Logam dari Korosi</a></li>
+  </ul>
+</body>
+</html>

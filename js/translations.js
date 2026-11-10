@@ -16,10 +16,10 @@ const TRANSLATIONS = {
 
     // HERO
     hero_eyebrow:    'Samarinda, Kalimantan Timur',
-    hero_title_1:    'Solusi Lengkap',
+    hero_title_1:    'Supplier Terpercaya',
     hero_title_2:    'Peralatan Kapal',
     hero_title_3:    '& Tambang',
-    hero_subtitle:   'Memenuhi kebutuhan industri maritim dan pertambangan mulai dari perlengkapan kapal seperti jangkar, tali & rantai kapal, valve, alat navigasi, hingga alat keselamatan dan peralatan tambang untuk mendukung kegiatan operasional di Kalimantan Timur.',
+    hero_subtitle:   'PT Borneo Timur Cemerlang merupakan supplier peralatan kapal dan perlengkapan tambang di Kalimantan Timur. Kami menyediakan jangkar, tali dan rantai kapal, valve, peralatan navigasi, serta alat keselamatan untuk memenuhi kebutuhan operasional industri maritim dan pertambangan.',
     hero_btn_catalog: 'Lihat Katalog',
     hero_btn_wa:      'Konsultasi WhatsApp',
 
@@ -34,19 +34,19 @@ const TRANSLATIONS = {
     slide_4_sub:   'Jangkar, tali, bollard & aksesori dek lengkap',
 
     // STATS
-// STATS
-stats_eyebrow:  'BTC · PROFIL PERUSAHAAN',
-stats_title:    'Sekilas Tentang Bisnis Kami',
-stats_subtitle: 'Menyediakan solusi pengadaan kebutuhan marine dan industri.',
-stats_status:   'PROFIL BISNIS',
+    stats_eyebrow:  'BTC · PROFIL PERUSAHAAN',
+    stats_title:    'Sekilas Tentang Bisnis Kami',
+    stats_subtitle: 'Menyediakan solusi pengadaan kebutuhan marine dan industri.',
+    stats_status:   'PROFIL BISNIS',
 
-stat_products: 'Produk Tersedia',
-stat_clients:  'Pelanggan Aktif',
-stat_years:    'Tingkat Kepuasan',
-stat_ports:    'Proyek Dilayani',
+    stat_products: 'Produk Tersedia',
+    stat_clients:  'Pelanggan Aktif',
+    stat_years:    'Tingkat Kepuasan',
+    stat_ports:    'Proyek Dilayani',
 
-stats_signature: 'PT BORNEO TIMUR CEMERLANG',
-stats_caption:   'MARINE · PERTAMBANGAN · PASOKAN INDUSTRI',
+    stats_signature: 'PT BORNEO TIMUR CEMERLANG',
+    stats_caption:   'MARINE · PERTAMBANGAN · PASOKAN INDUSTRI',
+
 
     // SECTIONS
     section_featured:    'Produk Unggulan',
@@ -206,30 +206,29 @@ stats_caption:   'MARINE · PERTAMBANGAN · PASOKAN INDUSTRI',
     hero_btn_catalog: 'View Catalog',
     hero_btn_wa:      'WhatsApp Consultation',
 
-    // SLIDES
-    slide_1_title: 'Marine Safety Equipment',
-    slide_1_sub:   'Life jackets, lifebuoys, EPIRB & more',
-    slide_2_title: 'Modern Navigation Systems',
-    slide_2_sub:   'GPS, radar, echosounder & latest chart plotters',
-    slide_3_title: 'Marine Engine Components',
-    slide_3_sub:   'High-quality spare parts & engine components',
-    slide_4_title: 'Deck & Mooring Equipment',
-    slide_4_sub:   'Anchors, ropes, bollards & complete deck accessories',
+    // HERO
+    hero_eyebrow:    'Samarinda, East Kalimantan',
+    hero_title_1:    'Trusted Supplier',
+    hero_title_2:    'Marine Equipment',
+    hero_title_3:    '& Mining Supplies',
+    hero_subtitle:   'PT Borneo Timur Cemerlang is a supplier of marine equipment and mining supplies in East Kalimantan. We provide anchors, marine ropes and chains, valves, navigation equipment, and safety gear to support maritime and mining operations.',
+    hero_btn_catalog: 'View Catalog',
+    hero_btn_wa:      'WhatsApp Consultation',
 
     // STATS
-    // STATS
-stats_eyebrow:  'BTC · COMPANY OVERVIEW',
-stats_title:    'Our Business at a Glance',
-stats_subtitle: 'Delivering marine and industrial supply solutions.',
-stats_status:   'BUSINESS PROFILE',
+    stats_eyebrow:  'BTC · COMPANY OVERVIEW',
+    stats_title:    'Our Business at a Glance',
+    stats_subtitle: 'Delivering marine and industrial supply solutions.',
+    stats_status:   'BUSINESS PROFILE',
 
-stat_products: 'Available Products',
-stat_clients:  'Active Customers',
-stat_years:    'Customer Satisfaction',
-stat_ports:    'Projects Served',
+    stat_products: 'Available Products',
+    stat_clients:  'Active Customers',
+    stat_years:    'Customer Satisfaction',
+    stat_ports:    'Projects Served',
 
-stats_signature: 'PT BORNEO TIMUR CEMERLANG',
-stats_caption:   'MARINE · MINING · INDUSTRIAL SUPPLY',
+    stats_signature: 'PT BORNEO TIMUR CEMERLANG',
+    stats_caption:   'MARINE · MINING · INDUSTRIAL SUPPLY',
+   
 
     // SECTIONS
     section_areas_eyebrow: 'Service Areas',

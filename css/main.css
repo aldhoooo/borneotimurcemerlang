@@ -1353,7 +1353,7 @@ body.btc-cart-lock {
 .btc-cart-overlay {
   position: fixed;
   inset: 0;
-  z-index: 1090;
+  z-index: 1300;
   background: rgba(12, 30, 21, .48);
   opacity: 0;
   visibility: hidden;
@@ -1369,7 +1369,7 @@ body.btc-cart-lock {
 
 .btc-cart-drawer {
   position: fixed;
-  z-index: 1091;
+  z-index: 1310;
   top: 0;
   right: 0;
   width: min(460px, 100%);
@@ -1638,7 +1638,7 @@ body.btc-cart-lock {
 .btc-checkout-overlay {
   position: fixed;
   inset: 0;
-  z-index: 1100;
+  z-index: 1320;
   display: flex;
   align-items: center;
   justify-content: center;

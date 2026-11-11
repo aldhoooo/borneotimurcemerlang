@@ -642,8 +642,15 @@ input, textarea, select {
 .mobile-menu__bottom .lang-btn { color: rgba(255,255,255,0.65); }
 .mobile-menu__bottom .lang-btn.active { color: var(--navy); background: var(--aqua); }
 
+
+/* =========================================================
+   RESPONSIVE NAVBAR — TABLET & MOBILE FIX
+========================================================= */
+
 @media (max-width: 899px) {
-  .navbar { top: 10px; }
+  .navbar {
+    top: 10px;
+  }
 
   .navbar .container {
     width: calc(100% - 24px);
@@ -657,8 +664,13 @@ input, textarea, select {
     border-radius: 18px;
   }
 
+  /* BRAND */
+
   .nav-logo {
-    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+    flex: 1 1 0;
     min-width: 0;
     gap: 8px;
   }
@@ -666,45 +678,91 @@ input, textarea, select {
   .nav-logo__mark {
     width: 36px;
     height: 36px;
+    flex: 0 0 36px;
     border-radius: 11px;
   }
 
-  .nav-logo__mark img { width: 33px; height: 33px; }
+  .nav-logo__mark img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .nav-logo__text {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: visible;
+  }
 
   .navbar .nav-logo__name {
-    max-width: clamp(92px, 29vw, 180px);
-    font-size: clamp(0.58rem, 2.5vw, 0.78rem);
+    display: block;
+
+    width: 100%;
+    max-width: none;
+
+    font-size: clamp(0.62rem, 2.5vw, 0.78rem);
+    line-height: 1.2;
+
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+
+    flex-shrink: 1;
   }
 
   .navbar .nav-logo__sub {
+    display: block;
+
+    max-width: 100%;
     margin-top: 3px;
-    font-size: clamp(0.45rem, 1.8vw, 0.55rem);
-    letter-spacing: 0.12em;
+
+    font-size: clamp(0.44rem, 1.8vw, 0.55rem);
+    letter-spacing: 0.10em;
+
+    white-space: nowrap;
   }
+
+  /* HIDE DESKTOP ELEMENTS */
 
   .nav-links,
   #search-toggle-btn,
   #desktop-search,
-  .nav-cta { display: none !important; }
+  .nav-cta {
+    display: none !important;
+  }
+
+  /* ACTIONS */
 
   .nav-actions {
+    display: flex;
+    align-items: center;
+
     gap: 6px;
     flex: 0 0 auto;
     margin-left: auto;
   }
 
-  .nav-actions > .lang-toggle { display: none; }
+  .nav-actions > .lang-toggle {
+    display: none;
+  }
 
-  #mobile-search-toggle { display: inline-flex; }
+  #mobile-search-toggle {
+    display: inline-flex;
+  }
 
   .hamburger {
     display: flex;
+
     width: 40px;
     height: 40px;
-    flex-basis: 40px;
+    flex: 0 0 40px;
   }
 
-  .mobile-search { top: 84px; right: 12px; }
+  /* MOBILE PANELS */
+
+  .mobile-search {
+    top: 84px;
+    right: 12px;
+  }
 
   .mobile-menu {
     top: 84px;
@@ -715,34 +773,72 @@ input, textarea, select {
   }
 }
 
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
 @media (max-width: 380px) {
-  .navbar .container { width: calc(100% - 16px); }
-  .nav-inner { padding-left: 9px; padding-right: 8px; gap: 5px; }
-  .nav-logo { gap: 6px; }
-  .nav-logo__mark { width: 32px; height: 32px; }
-  .nav-logo__mark img { width: 30px; height: 30px; }
-  .navbar .nav-logo__name { max-width: 94px; font-size: 0.57rem; }
-  .navbar .nav-logo__sub { font-size: 0.43rem; }
-  .nav-actions { gap: 5px; }
-  #mobile-search-toggle,
-  .hamburger { width: 37px; height: 37px; flex-basis: 37px; }
-}
 
-@media (min-width: 900px) {
-  #mobile-search-toggle,
-  .hamburger,
-  .mobile-menu,
-  .mobile-search { display: none !important; }
-}
+  .navbar .container {
+    width: calc(100% - 16px);
+  }
 
-@media (prefers-reduced-motion: reduce) {
-  .navbar,
-  .nav-inner,
-  .mobile-menu,
-  .hamburger span {
-    transition-duration: 0.01ms !important;
+  .nav-inner {
+    padding-left: 9px;
+    padding-right: 8px;
+    gap: 5px;
+  }
+
+  .nav-logo {
+    gap: 6px;
+  }
+
+  .nav-logo__mark {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .nav-logo__mark img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-logo__text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .navbar .nav-logo__name {
+    width: 100%;
+    max-width: none;
+
+    font-size: 0.59rem;
+    line-height: 1.15;
+
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .navbar .nav-logo__sub {
+    font-size: 0.42rem;
+    letter-spacing: 0.08em;
+  }
+
+  .nav-actions {
+    gap: 5px;
+  }
+
+  #mobile-search-toggle,
+  .hamburger {
+    width: 37px;
+    height: 37px;
+    flex-basis: 37px;
   }
 }
+
+
 
 /* ================= SOURCE: components.css ================= */
 /* ===========================

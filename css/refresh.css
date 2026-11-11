@@ -2372,11 +2372,17 @@ canvas {
     border-radius: 17px;
   }
 
+ /* NAVBAR BRAND — TABLET */
   .navbar .nav-logo__name {
-    max-width: clamp(88px, 19vw, 170px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: clamp(.68rem, 1.5vw, .82rem);
+    display: block;
+    width: 100%;
+    max-width: none;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+    overflow-wrap: normal;
+    font-size: clamp(.62rem, 2.5vw, .78rem);
+    line-height: 1.2;
   }
 
   .navbar .nav-logo__sub { font-size: .58rem; }
@@ -2405,9 +2411,17 @@ canvas {
     gap: 8px;
   }
 
+  /* NAVBAR BRAND — MOBILE */
   .navbar .nav-logo__name {
-    max-width: clamp(82px, 28vw, 126px);
-    font-size: .68rem;
+    display: block;
+    width: 100%;
+    max-width: none;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+    overflow-wrap: normal;
+    font-size: .62rem;
+    line-height: 1.2;
   }
 
   .navbar .nav-logo__sub { font-size: .54rem; }

@@ -2542,3 +2542,369 @@ canvas {
   margin-inline: auto;
   padding-inline: 0;
 }
+
+
+/* ==========================================================
+   BTC CONTACT PAGE
+   Responsive Layout Correction
+   Desktop • Tablet • Mobile
+========================================================== */
+
+/* --- GRID LAYOUT --- */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--sp-xl);
+  width: 100%;
+  min-width: 0;
+  align-items: start;
+}
+
+.contact-grid > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  gap: var(--sp-lg);
+}
+
+.contact-info-card,
+.contact-form-card {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* --- CONTACT CHANNEL CARDS --- */
+
+.contact-info-card .channel-card {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  gap: 14px;
+}
+
+.contact-info-card .channel-card > div:last-child {
+  flex: 1 1 0%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.channel-card__icon {
+  flex: 0 0 42px;
+}
+
+.channel-card__label {
+  overflow-wrap: anywhere;
+}
+
+.channel-card__val {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.channel-card__sub {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+
+/* --- CONTACT INFORMATION --- */
+
+.hours-card {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+
+.hours-row .day {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.hours-row .time {
+  flex: 0 1 65%;
+  min-width: 0;
+  text-align: right;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+/* --- CONTACT FORM --- */
+
+.contact-form-card {
+  box-sizing: border-box;
+}
+
+.contact-form-card form {
+  width: 100%;
+  min-width: 0;
+}
+
+.form-row {
+  width: 100%;
+  min-width: 0;
+}
+
+.form-group {
+  min-width: 0;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* --- MAP --- */
+
+.map-embed {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .contact-form-card {
+    max-width: 100%;
+  }
+
+}
+
+/* ==========================================================
+   DESKTOP
+========================================================== */
+
+@media (min-width: 900px) {
+
+  .contact-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1.4fr);
+    gap: var(--sp-xl);
+  }
+
+  .contact-info,
+  .contact-form-card {
+    width: 100%;
+  }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 599px) {
+
+  /* Main layout */
+
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    margin-top: 20px;
+  }
+
+  .contact-info {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  /* Information card */
+
+  .contact-info-card {
+    width: 100%;
+    padding: 20px 18px;
+    margin: 0;
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-info-card__title {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+  }
+
+  /* Channel cards */
+
+  .contact-info-card .channel-card {
+    padding: 12px;
+    gap: 11px;
+    margin-bottom: 10px;
+    border-radius: var(--radius-md);
+  }
+
+  .contact-info-card .channel-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-info-card .channel-card__icon {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .channel-card__label {
+    font-size: 0.66rem;
+  }
+
+  .channel-card__val {
+    font-size: 0.82rem;
+  }
+
+  .channel-card__sub {
+    font-size: 0.7rem;
+  }
+
+  /* Disable hover movement on touch devices */
+
+  .channel-card:hover {
+    transform: none;
+  }
+
+  /* Second information card */
+
+  .hours-card {
+    padding: 20px !important;
+    border-radius: var(--radius-lg);
+  }
+
+  .hours-row {
+    gap: 8px;
+    padding: 9px 0;
+    font-size: 0.78rem;
+  }
+
+  .hours-row .time {
+    flex-basis: 65%;
+  }
+
+  /* Form */
+
+  .contact-form-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 22px 18px;
+    margin: 0;
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-form-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .contact-form-card .form-row.two-col {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .contact-form-card .form-group input,
+  .contact-form-card .form-group textarea,
+  .contact-form-card .form-group select {
+    font-size: 16px;
+  }
+
+  /* Map */
+
+  .map-embed {
+    margin-top: 24px !important;
+    border-radius: var(--radius-md);
+  }
+
+  .map-embed iframe {
+    height: 280px !important;
+  }
+
+  .map-embed > div:first-child {
+    align-items: flex-start !important;
+    padding: 14px 16px !important;
+  }
+
+  .map-embed > div:first-child span {
+    min-width: 0;
+    line-height: 1.5;
+  }
+
+}
+
+/* ==========================================================
+   EXTRA SMALL MOBILE
+========================================================== */
+
+@media (max-width: 360px) {
+
+  .contact-info-card {
+    padding: 17px 13px;
+  }
+
+  .contact-info-card .channel-card {
+    padding: 10px;
+    gap: 9px;
+  }
+
+  .contact-info-card .channel-card__icon {
+    flex-basis: 34px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .channel-card__val {
+    font-size: 0.78rem;
+  }
+
+  .contact-form-card {
+    padding: 18px 14px;
+  }
+
+  .hours-card {
+    padding: 16px !important;
+  }
+
+}
+

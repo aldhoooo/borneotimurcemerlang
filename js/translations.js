@@ -102,8 +102,8 @@ const TRANSLATIONS = {
     catalog_empty_title: 'Produk tidak ditemukan',
     catalog_empty_desc: 'Coba kata kunci lain atau pilih kategori yang berbeda.',
     order_wa: 'Pesan via WhatsApp',
-    wa_admin_1: 'Jhony Chua',
-    wa_admin_2: 'Effendi',
+    wa_admin_1: 'Effendi',
+    
 
     // ABOUT PAGE
     about_hero_eyebrow: 'Tentang PT Borneo Timur Cemerlang',
@@ -342,8 +342,8 @@ const TRANSLATIONS = {
     catalog_empty_title: 'No products found',
     catalog_empty_desc: 'Try different keywords or select a different category.',
     order_wa: 'Order via WhatsApp',
-    wa_admin_1: 'Jhony Chua',
-    wa_admin_2: 'Effendi',
+    wa_admin_1: 'Effendi',
+   
 
     // ABOUT PAGE
     about_hero_eyebrow: 'About PT Borneo Timur Cemerlang',

@@ -56,8 +56,7 @@
   function whatsappActions(productName) {
     return `
       <div class="product-wa-actions">
-        ${whatsappButton('6281268577849', t('wa_admin_1'), productName, 'primary')}
-        ${whatsappButton('6281295549800', t('wa_admin_2'), productName, 'secondary')}
+        ${whatsappButton('6281295549800', t('wa_admin_1'), productName, 'primary')}
       </div>
     `;
   }

@@ -2772,7 +2772,6 @@ footer .nav-logo__sub {
   opacity: .65;
 }
 
-
 /* ----------------------------------------------------------
    03. COMPANY STORY
 ---------------------------------------------------------- */
@@ -4681,14 +4680,28 @@ footer .nav-logo__sub {
    PRODUCT WHATSAPP BUTTONS
 ========================================= */
 
+
+/* ============================================================
+   PRODUCT WHATSAPP ACTIONS
+   Single contact button — full width
+   ============================================================ */
+
 .product-wa-actions {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: stretch;
-  gap: 8px;
+  grid-template-columns: minmax(0, 1fr);
   width: 100%;
-  margin-top: 14px;
+  gap: 10px;
 }
+
+.product-wa-actions .product-wa-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
 
 .product-wa-button {
   display: flex;

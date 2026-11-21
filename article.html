@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artikel – PT Borneo Timur Cemerlang</title>
   <script>
-    const articleIds = ["alat-keselamatan-kapal","alat-keselamatan-tambang-morowali","rekomendasi-gps-kapal-terbaik-2026","terpal-kapal-tongkang","zinc-anode-anoda-karat"];
+    const articleIds = ["alat-keselamatan-kapal",
+    "alat-keselamatan-tambang-morowali",
+    "rekomendasi-gps-kapal-terbaik-2026",
+    "terpal-kapal-tongkang",
+    "zinc-anode-anoda-karat"
+    ];
     const params = new URLSearchParams(window.location.search);
     const requestedId = params.get('id');
     const id = articleIds.includes(requestedId) ? requestedId : articleIds[0];

@@ -48,5 +48,37 @@ const ARTICLE_INDEX = [
     "date": "04 September 2026",
     "readTime": "6 menit baca",
     "image": "./assets/images/catalog/1408-deck-kapal.jpg"
-  }
+  },
+  {
+    "id": "panduan-alat-navigasi-kapal",
+    "title": "Panduan Lengkap Alat Navigasi Kapal: Fungsi dan Cara Memilihnya",
+    "excerpt": "Kenali berbagai alat navigasi kapal seperti kompas, radar, GPS, AIS, dan echo sounder, beserta fungsi serta panduan memilih perangkat yang sesuai kebutuhan pelayaran.",
+    "category": "Navigasi",
+    "categoryClass": "badge-teal",
+    "date": "20 November 2026",
+    "readTime": "6 menit baca",
+    "image": "./assets/images/articles/blog/b001-navigasi.webp"
+  },
+  {
+    "id": "alat-keselamatan-wajib-di-kapal",
+    "title": "Alat Keselamatan Wajib di Kapal: Panduan Lengkap untuk Pemilik dan Operator Kapal",
+    "excerpt": "Panduan lengkap perlengkapan keselamatan kapal mulai dari life jacket, lifebuoy, immersion suit, survival craft, APAR, hingga distress signal dan EPIRB.",
+    "category": "Keselamatan",
+    "categoryClass": "badge-green",
+    "date": "21 November 2026",
+    "readTime": "6 menit baca",
+    "image": "./assets/images/articles/blog/cat-safety.webp"
+  },
+  {
+    "id": "alat-komunikasi-kapal",
+    "title": "Mengenal Alat Komunikasi Kapal: Dari Radio VHF hingga Komunikasi Satelit",
+    "excerpt": "Kenali berbagai perangkat komunikasi kapal, mulai dari radio VHF, MF/HF, komunikasi satelit Inmarsat dan VSAT, hingga EPIRB dan SART untuk mendukung keselamatan pelayaran.",
+    "category": "Navigasi",
+    "categoryClass": "badge-green",
+    "date": "2 April 2026",
+    "readTime": "5 menit baca",
+    "image": "./assets/images/articles/blog/b003-komunikasi.webp"
+  },
+
+
 ];

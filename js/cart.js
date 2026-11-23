@@ -13,12 +13,8 @@
 
   const ADMINS = [
     {
-      name: 'Jhony Chua',
-      number: '6281268577849'
-    },
-    {
-      name: 'John',
-      number: '628117753350'
+      name: 'Effendi',
+      number: '6281295549800'
     }
   ];
 

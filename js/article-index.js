@@ -10,16 +10,6 @@ const ARTICLE_INDEX = [
     "image": "./assets/images/articles/alat-keselamatan-kapal.webp"
   },
   {
-    "id": "alat-keselamatan-tambang-morowali",
-    "title": "Alat Keselamatan Kerja Tambang di Morowali Sulawesi yang Wajib Dipakai di Area Berisiko",
-    "excerpt": "Jenis alat keselamatan tambang wajib untuk area berisiko di Morowali, Bahodopi, dan Bungku, lengkap dengan standar K3 pertambangan Indonesia.",
-    "category": "Keselamatan",
-    "categoryClass": "badge-red",
-    "date": "28 Mei 2026",
-    "readTime": "7 menit baca",
-    "image": "./assets/images/articles/alat-keselamatan-tambang-morowali.webp"
-  },
-  {
     "id": "rekomendasi-gps-kapal-terbaik-2026",
     "title": "5 Rekomendasi GPS Kapal Terbaik 2026 untuk Nelayan & Kapal Komersial",
     "excerpt": "Rekomendasi GPS dan alat navigasi kapal terbaik 2026 untuk nelayan dan kapal komersial, dari Furuno, Garmin, hingga Samyung.",
